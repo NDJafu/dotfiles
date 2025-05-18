@@ -6,6 +6,8 @@ vim.opt.smarttab = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
+vim.opt.wrap = false
+vim.opt.clipboard = "unnamedplus"
 vim.diagnostic.enable = true
 vim.diagnostic.config({
 	virtual_text = true,

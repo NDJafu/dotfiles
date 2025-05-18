@@ -9,4 +9,11 @@ return {
 			bufdelete = { enabled = true },
 		},
 	},
+	{
+		"nvzone/showkeys",
+		cmd = "ShowkeysToggle",
+		opts = {
+			position = "bottom-center",
+		},
+	},
 }

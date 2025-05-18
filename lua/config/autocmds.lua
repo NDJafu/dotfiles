@@ -20,5 +20,13 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		bufmap("n", "gr", "<cmd>lua vim.lsp.buf.references()<cr>")
 		-- Rename symbol
 		bufmap("n", "<leader>cr", "<cmd>lua vim.lsp.buf.rename()<cr>")
+		-- Code actions
+		bufmap("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<cr>")
+	end,
+})
+
+vim.api.nvim_create_autocmd("TextYankPost", {
+	callback = function()
+		vim.hl.on_yank()
 	end,
 })
